@@ -21,6 +21,9 @@ public class SoundManager : Singleton<SoundManager>
         }
     }
     
+    private void Start() {
+        PlayerAudioSource.clip=ThemeSound;
+    }
     
     public AudioClip ScoreUpSound;
     public AudioClip LooseHealthSound;
